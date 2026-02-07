@@ -1,13 +1,13 @@
-# 🧹 SQL Data Cleaning: Global Layoffs Dataset
+# SQL Data Cleaning: Global Layoffs Dataset
 
-## 📌 Project Overview
+## Project Overview
 Data is rarely clean. This project demonstrates a comprehensive **ETL (Extract, Transform, Load)** process using SQL to take a messy, real-world dataset of global layoffs and transform it into a high-quality asset for analysis.
 
 The goal was to move data from a raw, unreliable state to a "Production-Ready" staging table by resolving duplicates, formatting inconsistencies, and missing values.
 
 ---
 
-## 🛠️ The Cleaning Pipeline
+## The Cleaning Pipeline
 I followed a structured 6-step framework to ensure data integrity:
 
 ### 1. Staging & Architecture
@@ -36,7 +36,7 @@ I followed a structured 6-step framework to ensure data integrity:
 
 ---
 
-## 🧮 Key SQL Techniques Used
+## Key SQL Techniques Used
 * **Window Functions:** `ROW_NUMBER() OVER(PARTITION BY...)`
 * **CTEs:** For readable, multi-step transformations.
 * **String Functions:** `TRIM()`, `TRAILING`, `UPDATE`.
@@ -45,7 +45,7 @@ I followed a structured 6-step framework to ensure data integrity:
 
 ---
 
-## 📈 Final Outcome
+## Final Outcome
 **Cleaned Table:** `layoffs_staging2`
 
 The result is a dataset that is:
@@ -58,7 +58,4 @@ The result is a dataset that is:
 
 ---
 
-## 🚀 How to Run the Script
-1. Import the raw `layoffs.csv` into your SQL environment.
-2. Run the provided cleaning script sequentially.
-3. The final cleaned data will be available in the `layoffs_staging2` table.
+
